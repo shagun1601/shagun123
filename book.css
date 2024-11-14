@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(120deg, rgb(97, 64, 64), black);
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    background: linear-gradient(120deg, black, rgb(113, 85, 85));
+    filter: drop-shadow(black 10px 10px 25px);
+    padding: 30px;
+    color: white;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.heading {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    color: #ffdd67;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputbox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ffdd67;
+    border-radius: 8px;
+    background-color: #222;
+    color: white;
+    width: 100%;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border: 2px solid #ff774d; 
+}
+
+input[type="file"] {
+    padding: 8px;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="date"], 
+select {
+    font-size: 1rem;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    color: #aaa;
+}
+
+.button {
+    text-align: center;
+}
+
+.button input {
+    padding: 12px 25px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #ffdd67;
+    color: #111;
+    height: 45px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    transition: background0.3s ease, transform 0.2s ease;
+}
+
+.button input:hover {
+    background-color: #ff774d;
+    transform: translateY(-2px);
+}
+
+p {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    word-wrap: break-word; 
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(194, 181, 181);
+    text-shadow: 1px 1px 3px black;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    color: #ffdd67;
+    transform: scale(1.1);
+}
+
+nav li {
+    list-style: none;
+    padding: 22px;
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="file"],
+    select {
+        font-size: 0.9rem;
+    }
+}
